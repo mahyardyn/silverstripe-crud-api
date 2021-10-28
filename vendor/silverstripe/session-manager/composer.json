@@ -1,0 +1,53 @@
+{
+    "name": "silverstripe/session-manager",
+    "description": "Allow users to manage and revoke access to multiple login sessions across devices.",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "homepage": "https://github.com/silverstripe/silverstripe-session-manager",
+    "keywords": [
+        "silverstripe",
+        "session"
+    ],
+    "authors": [
+        {
+            "name": "Loz Calver",
+            "homepage": "https://github.com/kinglozzer"
+        },
+        {
+            "name": "Silverstripe Ltd.",
+            "homepage": "http://silverstripe.com"
+        },
+        {
+            "name": "The SilverStripe Community",
+            "homepage": "http://silverstripe.org"
+        }
+    ],
+    "require": {
+        "silverstripe/admin": "^1.7",
+        "silverstripe/framework": "^4.8",
+        "ua-parser/uap-php": "^3.5"
+    },
+    "require-dev": {
+        "sminnee/phpunit": "^5.7",
+        "squizlabs/php_codesniffer": "^3.0",
+        "symbiote/silverstripe-queuedjobs": "^4"
+    },
+    "suggest": {
+        "symbiote/silverstripe-queuedjobs": "^4",
+        "silverstripe/auditor": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SilverStripe\\SessionManager\\": "src/",
+            "SilverStripe\\SessionManager\\Tests\\": "tests/php/",
+            "SilverStripe\\SessionManager\\Tests\\Behat\\Context\\": "tests/behat/src/"
+        }
+    },
+    "extra": {
+        "expose": [
+            "client/dist"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,3 @@
+de:
+  SilverStripe\MimeValidator\MimeUploadValidator:
+    FAILEDMIMECHECK: 'MIME-Validierung fehlgeschlagen: {message}'

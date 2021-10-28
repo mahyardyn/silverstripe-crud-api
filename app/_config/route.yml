@@ -1,0 +1,11 @@
+---
+Name: restfulroutes
+After:
+  - '#rootroutes'
+  - '#coreroutes'
+---
+SilverStripe\Control\Director:
+  rules:
+    'api/v1//$Action/$ID/': 'app\APIController'
+
+
